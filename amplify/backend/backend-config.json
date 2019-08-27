@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"dice2bc6903b": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}

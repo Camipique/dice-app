@@ -1,0 +1,19 @@
+{
+    "local": {
+        "awscloudformation": {
+            "AuthRoleName": "dice-local-20190827100955-authRole",
+            "UnauthRoleArn": "arn:aws:iam::146753183536:role/dice-local-20190827100955-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::146753183536:role/dice-local-20190827100955-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "dice-local-20190827100955-deployment",
+            "UnauthRoleName": "dice-local-20190827100955-unauthRole",
+            "StackName": "dice-local-20190827100955",
+            "StackId": "arn:aws:cloudformation:eu-west-1:146753183536:stack/dice-local-20190827100955/70469460-c8aa-11e9-a87e-02f49d781af6"
+        },
+        "categories": {
+            "auth": {
+                "dice2bc6903b": {}
+            }
+        }
+    }
+}
