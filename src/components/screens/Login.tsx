@@ -1,69 +1,30 @@
 import React, {Fragment} from 'react';
 import {Form, Item, Label, Input, Button, Icon, Text, View} from 'native-base';
 
+import FacebookLogin from '../authentication/buttons/FacebookLogin';
+import GoogleLogin from '../authentication/buttons/GoogleLogin';
+import DefaultLogin from '../authentication/buttons/DefaultLogin';
+
+import LoginForm from '../authentication/LoginForm';
+
 const Login = () => {
   return (
     <Fragment>
       <View>
-        <Form>
-          <Item stackedLabel>
-            <Label>Username</Label>
-            <Input
-              onChangeText={() => {
-                console.log('changing username');
-              }}
-            />
-          </Item>
-          <Item stackedLabel last>
-            <Label>Password</Label>
-            <Input
-              secureTextEntry
-              onChangeText={() => {
-                console.log('changing password');
-              }}
-            />
-          </Item>
-        </Form>
+        <LoginForm />
       </View>
       <View padder>
-        <Button
-          full
-          rounded
-          success
-          onPress={() => {
-            console.log('login');
-          }}>
-          <Icon type="FontAwesome5" name="sign-in-alt" />
-          <Text>Login</Text>
-        </Button>
+        <DefaultLogin />
       </View>
       <View
         style={{paddingTop: '5%', paddingBottom: '5%', alignItems: 'center'}}>
         <Text> Or </Text>
       </View>
       <View padder>
-        <Button
-          full
-          rounded
-          primary
-          onPress={() => {
-            console.log('login');
-          }}>
-          <Icon type="FontAwesome5" name="facebook" />
-          <Text>Login With Facebook</Text>
-        </Button>
+        <FacebookLogin />
       </View>
       <View padder>
-        <Button
-          full
-          rounded
-          danger
-          onPress={() => {
-            console.log('login');
-          }}>
-          <Icon type="FontAwesome5" name="google-plus-g" />
-          <Text>Login With Google+</Text>
-        </Button>
+        <GoogleLogin />
       </View>
     </Fragment>
   );
