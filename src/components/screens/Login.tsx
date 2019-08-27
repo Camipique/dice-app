@@ -7,7 +7,7 @@ import DefaultLogin from '../authentication/buttons/DefaultLogin';
 
 import LoginForm from '../authentication/LoginForm';
 
-const Login = () => {
+const LoginScreen = () => {
   return (
     <Fragment>
       <View>
@@ -30,4 +30,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginScreen;

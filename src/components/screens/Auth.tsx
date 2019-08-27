@@ -12,7 +12,7 @@ import {
   TabHeading,
 } from 'native-base';
 
-import Login from './Login';
+import LoginScreen from './Login';
 
 const Auth = () => {
   return (
@@ -31,7 +31,7 @@ const Auth = () => {
               <Text>Login</Text>
             </TabHeading>
           }>
-          <Login />
+          <LoginScreen />
         </Tab>
         <Tab
           heading={

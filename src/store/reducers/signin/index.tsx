@@ -6,7 +6,7 @@ const initialState: AuthState = {
   password: '',
 };
 
-const signin = (state: AuthState = initialState, action: AuthActionTypes) => {
+const SignIn = (state: AuthState = initialState, action: AuthActionTypes) => {
   switch (action.type) {
     case SET_USERNAME:
       return {...state, username: action.username};
@@ -17,5 +17,4 @@ const signin = (state: AuthState = initialState, action: AuthActionTypes) => {
   }
 };
 
-
-export default signin
+export default SignIn;
